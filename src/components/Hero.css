@@ -1,0 +1,60 @@
+.Hero{
+    display: flex;
+    justify-content: space-between;
+}
+.left-side{
+    padding: 2rem;
+    padding-top: 1.5rem;
+flex: 3;    
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+.ad{
+    margin-top: 4rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    text-transform: uppercase;
+    padding: 20px 13px;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
+}
+.ad span{
+    z-index: 2;
+}
+
+.ad >div{
+    position: absolute; 
+    background-color: var(--orange);
+width: 5.4rem;
+left: 8px;
+height: 80%;
+border-radius: 3rem;
+z-index: 1;
+
+}
+.header-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+font-size: 4.5rem;
+font-weight: bold;
+color: white;
+text-overflow: inherit;
+}
+.header-para {
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    width: 80%;
+    color: white; 
+    text-transform: none;
+}
+.right-side{
+    flex: 1;
+}
