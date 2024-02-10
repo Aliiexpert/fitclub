@@ -15,6 +15,7 @@ const Join = () => {
         )
         .then((result)=>{
             console.log('done')
+            
         },
         (error)=>{
             console.log(error)
@@ -24,6 +25,7 @@ const Join = () => {
   return (
    <div className="Join" id='join-us'>
     <div className="left-j">
+        
         <hr />
         <div><span className='stroke-text'>Ready to</span><span>Level up</span></div>
         <div><span>your body</span><span className='stroke-text'>with us?</span></div>

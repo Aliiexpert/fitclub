@@ -6,7 +6,7 @@
     gap: 4rem;
     position: relative;
   }
-  /* .plans-blur-1{
+  .plans-blur-1{
       width: 32rem;
       height: 23rem;
       top: 6rem;
@@ -17,7 +17,7 @@
       height: 23rem;
       top: 10rem;
       right: 0rem;
-  } */
+  }
   
   .plans {
     display: flex;
@@ -79,14 +79,17 @@
   
   
   @media screen and (max-width: 768px) {
-      .plans-container>.programs-header{
-          font-size: x-large;
-      }
-      .plans{
-          flex-direction: column;
-      }
-      .plans>:nth-child(2)
-      {
-          transform: none;
-      }
+    .plans-container > .programs-header {
+      font-size: x-large; /* Adjust font size */
+    }
+    
+    .plans {
+      flex-direction: column; /* Stack plans vertically */
+      align-items: center; /* Center items */
+      gap: 2rem; /* Adjust gap */
+    }
+    
+    .plans > :nth-child(2) {
+      transform: none; /* Remove scale transformation */
+    }
   }

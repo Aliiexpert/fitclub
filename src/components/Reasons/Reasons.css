@@ -75,27 +75,46 @@
     width: 2.5rem;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 769px) {
     .Reasons {
-      flex-direction: column;
+      flex-direction: row; /* Maintain the original row layout */
     }
+  
     .left-r {
-      grid-auto-rows: auto;
-      overflow: hidden;
+      grid-auto-rows: 1fr; /* Restore auto rows for grid */
+      overflow: hidden; /* Hide overflow if needed */
     }
+  
     .left-r > :nth-child(1) {
-      width: 7rem;
-      height: 17rem;
+      width: 12rem; /* Restore original width */
+      height: 28rem; /* Restore original height */
     }
+  
     .left-r > :nth-child(2) {
-      width: 15rem;
-      height: 10rem;
+      width: auto; /* Restore original width */
+      height: 16rem; /* Restore original height */
     }
+  
     .left-r > :nth-child(3) {
-      width: 7rem;
+      width: 14rem; /* Restore original width */
     }
+  
     .left-r > :nth-child(4) {
-      width: 7rem;
-      height: 6rem;
+      width: 10rem; /* Restore original width */
+      height: 11.2rem; /* Restore original height */
+    }
+  
+    /* Adjustments for the right side */
+    .right-r {
+      flex: 1; /* Occupy remaining space */
+      text-align: center; /* Center text for laptop view */
+    }
+  
+    .right-r > div {
+      font-size: 2rem; /* Reduce font size for laptop view */
+    }
+  
+    .details-r > div {
+      font-size: 0.8rem; /* Reduce font size for laptop view */
     }
   }

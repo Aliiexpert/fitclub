@@ -44,3 +44,36 @@
     filter: blur(200px);
     background: rgb(255, 115, 0);
 }
+@media screen and (max-width: 768px) {
+    .Footer-container > :nth-child(3),
+    .Footer-container > :nth-child(4) {
+      width: 100%; /* Adjust width to fill the container */
+      height: 8rem; /* Reduce height for better mobile view */
+      filter: blur(100px); /* Decrease blur effect for better visibility */
+      position: static; /* Remove positioning */
+      margin-top: 2rem; /* Add margin for separation */
+    }
+  
+    .Footer-container > :nth-child(4) {
+      order: -1; /* Move this element to the top for better stacking order */
+    }
+  
+    .footer {
+      gap: 2rem; /* Reduce gap between elements */
+      height: auto; /* Allow the container to adjust its height */
+      padding: 1rem; /* Adjust padding for better spacing */
+    }
+  
+    .social-links {
+      gap: 2rem; /* Reduce gap between social links */
+    }
+  
+    .social-links > img {
+      width: 3rem; /* Increase size of social link icons for better visibility */
+      height: 3rem;
+    }
+  
+    .logo-f > img {
+      width: 8rem; /* Reduce size of logo for better mobile view */
+    }
+  }
